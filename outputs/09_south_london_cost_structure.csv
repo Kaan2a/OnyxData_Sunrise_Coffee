@@ -1,0 +1,3 @@
+store_id,store_name,year,total_revenue,total_rent,total_staffing_cost,total_cogs,gross_profit_margin,rent_to_revenue_cost,staffing_to_revenue_cost,cogs_to_revenue_cost
+32,Sunrise Coffee South London Corner,2023,786977,90838,364851,289080,63.27,11.54,46.36,36.73
+32,Sunrise Coffee South London Corner,2024,595744,93246,349902,216797,63.61,15.65,58.73,36.39

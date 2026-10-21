@@ -1,0 +1,61 @@
+store_id,store_name,region,store_format,loyalty_adoption_pct,loyalty_member_revenue_pct,total_loyalty_revenue,total_loyalty_cost,total_revenue,missing_loyalty_months
+24,Sunrise Coffee Cheltenham Quarter,South-West,High-Street,58.50,59.70,966670.25,30060.26,1619195.19,0
+50,Sunrise Coffee Bradford Brew Bar,Yorkshire-and-Humber,High-Street,57.30,57.26,915123.83,26655.81,1598053.61,0
+20,Sunrise Coffee Guildford Hub,South-East,High-Street,56.50,56.00,762435.36,25783.14,1361387.75,0
+52,Sunrise Coffee Chester House,North-West,High-Street,55.50,56.01,827062.06,29265.28,1476679.61,0
+11,Sunrise Coffee Cambridge Brew Bar,East-of-England,High-Street,54.60,55.55,769485.14,30086.47,1385091.37,0
+37,Sunrise Coffee Ipswich House,East-of-England,High-Street,54.60,55.14,874635.35,28326.65,1586068.04,0
+17,Sunrise Coffee Sheffield Hub,Yorkshire-and-Humber,High-Street,54.30,54.09,797809.82,26458.24,1475066.00,0
+21,Sunrise Coffee Birmingham Roastery,West-Midlands,High-Street,54.00,55.97,878853.64,30053.64,1570209.70,0
+31,Sunrise Coffee Southampton House,South-East,High-Street,52.70,53.80,746376.55,27266.43,1387266.97,0
+35,Sunrise Coffee Canterbury Yard,South-East,High-Street,51.80,52.31,821143.42,30295.86,1569786.16,0
+57,Sunrise Coffee Luton House,East-of-England,Transport-Hub,51.80,50.17,809379.02,31921.68,1613269.88,0
+19,Sunrise Coffee Manchester Collective,North-West,High-Street,50.60,50.32,682243.43,30147.49,1355717.91,0
+44,Sunrise Coffee Newcastle Collective,North-East,High-Street,48.00,47.56,687726.72,26218.88,1446006.64,0
+54,Sunrise Coffee Derry Roastery,Northern-Ireland,High-Street,47.70,47.97,727334.44,28801.29,1516273.74,0
+47,Sunrise Coffee Exeter Express,South-West,High-Street,47.60,47.43,698802.03,28008.58,1473411.18,0
+56,Sunrise Coffee Lincoln Corner,East-Midlands,High-Street,47.50,47.15,775738.76,28680.94,1645211.39,0
+18,Sunrise Coffee Nottingham Quarter,East-Midlands,High-Street,47.30,47.19,661154.58,25631.61,1401019.83,0
+12,Sunrise Coffee Cardiff Corner,Wales,High-Street,46.70,45.01,619205.35,29903.90,1375838.94,0
+26,Sunrise Coffee Wolverhampton Yard,West-Midlands,High-Street,45.60,44.57,680157.43,28895.63,1526125.88,0
+42,Sunrise Coffee Belfast Yard,Northern-Ireland,High-Street,45.40,44.31,640668.73,26448.93,1445718.92,0
+43,Sunrise Coffee North London Yard,London,High-Street,44.90,45.43,655812.09,31402.40,1443582.05,0
+4,Sunrise Coffee Chester Brew Bar,North-West,High-Street,41.80,41.72,612257.33,32002.16,1467591.23,0
+3,Sunrise Coffee Newport Yard,Wales,High-Street,41.60,43.65,684033.89,30289.77,1567263.95,0
+27,Sunrise Coffee Plymouth Express,South-West,High-Street,41.50,40.68,629857.35,27890.26,1548221.65,0
+9,Sunrise Coffee Luton Express,East-of-England,Transport-Hub,39.70,39.50,621395.71,28435.18,1573256.03,0
+58,Sunrise Coffee Leeds Brew Bar,Yorkshire-and-Humber,High-Street,38.60,38.77,579454.46,27002.46,1494530.53,0
+55,Sunrise Coffee Swansea Collective,Wales,High-Street,38.30,37.97,539394.52,29361.97,1420600.05,0
+46,Sunrise Coffee East London Lounge,London,High-Street,38.00,36.97,633436.23,26861.64,1713156.43,0
+45,Sunrise Coffee Liverpool Collective,North-West,High-Street,36.10,34.80,484404.80,27368.38,1391838.43,0
+49,Sunrise Coffee Sunderland Express,North-East,High-Street,35.40,36.29,503968.55,29366.86,1388573.26,0
+38,Sunrise Coffee Preston Brew Bar,North-West,High-Street,34.50,34.27,505736.06,28484.58,1475861.25,0
+41,Sunrise Coffee Bath Hub,South-West,High-Street,34.40,34.84,519013.33,31984.80,1489695.99,0
+30,Sunrise Coffee Coventry Roastery,West-Midlands,High-Street,34.20,34.48,518200.31,29227.42,1502883.13,0
+15,Sunrise Coffee West London Quarter,London,High-Street,31.50,31.63,492409.41,29128.73,1556640.01,0
+1,Sunrise Coffee Sunderland Station,North-East,High-Street,31.20,30.76,456670.16,29035.73,1484400.13,0
+16,Sunrise Coffee Middlesbrough Roastery,North-East,High-Street,31.00,27.95,426961.04,30982.56,1527527.18,0
+29,Sunrise Coffee Dundee Station,Scotland,High-Street,30.70,29.97,429982.01,32410.56,1434876.32,0
+13,Sunrise Coffee Norwich Station,East-of-England,High-Street,27.90,27.14,392628.12,24559.08,1446629.80,0
+7,Sunrise Coffee Swansea Hub,Wales,High-Street,27.40,27.69,414131.15,27352.41,1495494.04,0
+2,Sunrise Coffee Bradford Yard,Yorkshire-and-Humber,High-Street,26.30,26.44,410244.41,26444.79,1551438.94,0
+40,Sunrise Coffee Bristol Station,South-West,High-Street,25.90,26.48,369507.51,29181.86,1395296.53,0
+48,Sunrise Coffee Reading Hub,South-East,High-Street,22.30,21.75,335224.96,29093.17,1541122.61,0
+5,Sunrise Coffee Canary Wharf Quarter,London,High-Street,21.70,21.54,325717.26,25894.45,1512182.70,0
+10,Sunrise Coffee Leeds Roastery,Yorkshire-and-Humber,High-Street,19.60,20.12,285758.92,28951.93,1420339.99,0
+14,Sunrise Coffee Oxford Lounge,South-East,High-Street,14.40,13.62,201923.21,27544.18,1482689.22,0
+33,Sunrise Coffee Aberdeen Express,Scotland,High-Street,14.10,15.04,242940.98,27784.38,1614917.07,0
+8,Sunrise Coffee Lincoln Express,East-Midlands,High-Street,13.90,13.52,203158.73,29930.47,1502927.17,0
+23,Sunrise Coffee Edinburgh Corner,Scotland,High-Street,13.40,14.05,215445.36,26983.32,1533243.80,0
+60,Sunrise Coffee Cardiff Collective,Wales,High-Street,13.00,12.90,191115.04,29380.01,1481164.16,0
+39,Sunrise Coffee Central London House,London,High-Street,12.70,14.46,216534.69,29941.14,1497966.27,0
+25,Sunrise Coffee Glasgow Express,Scotland,High-Street,11.70,10.93,175300.81,29341.41,1603847.17,0
+53,Sunrise Coffee Canary Wharf Express,London,High-Street,10.90,8.06,108852.44,28840.24,1351123.81,0
+28,Sunrise Coffee Hull Hub,Yorkshire-and-Humber,High-Street,10.80,11.94,185136.09,32044.54,1551201.52,0
+22,Sunrise Coffee Derby Lounge,East-Midlands,High-Street,10.20,9.23,139407.11,31213.04,1510338.38,0
+59,Sunrise Coffee Cambridge Quarter,East-of-England,High-Street,10.00,8.19,115255.96,33630.63,1406929.15,0
+32,Sunrise Coffee South London Corner,London,High-Street,8.70,8.87,122593.38,28501.16,1382721.02,0
+6,Sunrise Coffee Derry Station,Northern-Ireland,High-Street,8.20,8.11,119649.74,27901.26,1474914.48,0
+34,Sunrise Coffee Brighton Express,South-East,High-Street,7.90,8.71,137280.14,29269.06,1576572.26,0
+36,Sunrise Coffee Leicester Express,East-Midlands,High-Street,7.70,9.16,140194.50,28344.94,1530939.77,0
+51,Sunrise Coffee Newport House,Wales,High-Street,5.70,5.71,86507.06,27887.58,1514092.99,0
