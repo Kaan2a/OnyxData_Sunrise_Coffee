@@ -1,0 +1,13 @@
+region,store_months,status_mismatches,classified_risk_months,classified_risk_share_pct
+London,168,51,49,29.17
+South-West,120,52,23,19.17
+North-West,120,46,21,17.50
+East-Midlands,120,54,20,16.67
+North-East,96,51,13,13.54
+West-Midlands,72,27,9,12.50
+Scotland,96,43,10,10.42
+South-East,144,55,14,9.72
+East-of-England,144,57,13,9.03
+Northern-Ireland,72,26,6,8.33
+Wales,144,74,10,6.94
+Yorkshire-and-Humber,144,64,9,6.25

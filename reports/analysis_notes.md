@@ -723,3 +723,697 @@ The analysis relies on store-level aggregate financial records and a cross-secti
 **Conclusion:** Loyalty participation closely tracks the share of sales attributed to members, but does not show a meaningful linear relationship with net profitability across the observed 60 stores. Monthly financial performance fluctuates without a stable seasonal pattern established by the two-year sample. Management should prioritize programme economics, customer-level validation, and comparable-store investigation rather than treating loyalty adoption alone as a profitability lever.
 
 **Next Step:** Integrate the validated financial and loyalty KPIs into Power BI; retain data-source coverage warnings for the sampled `fact_daily_sales` dataset. Further regression modelling is optional and should be scoped to a specific testable business hypothesis.
+
+
+
+
+# Analysis 14 — Chain-Wide Store Performance Benchmarking
+
+**Project:** Sunrise Coffee Chain Analytics  
+**Analysis Period:** January 2023 – December 2024  
+**Scope:** 60 stores across 12 UK regions  
+**Data Sources:** `fact_store_monthly_profitability`, `dim_store`
+
+## 1. Business Objective
+
+This analysis evaluates the financial performance of all 60 Sunrise Coffee stores to identify underperforming locations, compare operational cost structures, and determine whether the profitability challenges previously observed in London are isolated or part of wider business patterns.
+
+## 2. Methodology
+
+Store-level financial indicators were aggregated across 24 months, including total revenue, total net profit, net profit margin, rent-to-revenue ratio, staffing-to-revenue ratio, and the number of loss-making months.
+
+Net profit margins and cost ratios were calculated using aggregated financial amounts rather than averages of monthly percentages.
+
+All 60 stores were represented by 24 monthly reporting periods.
+
+## 3. Key Findings
+
+### 3.1 South London Corner — Lowest Profitability
+
+South London Corner recorded the lowest net profit margin across the entire chain:
+
+- Total revenue: £1,382,721.02
+- Total net loss: £50,494.58
+- Net profit margin: -3.65%
+- Loss-making months: 13 out of 24
+- Rent-to-revenue ratio: 13.31%
+- Staffing-to-revenue ratio: 51.69%
+
+The store was the only location with a negative aggregate net profit over the two-year evaluation period.
+
+This result validates its selection for the earlier detailed profitability and cost structure investigations.
+
+### 3.2 Canary Wharf Express — Recurring Losses Despite Positive Aggregate Profit
+
+Canary Wharf Express had the second-lowest net profit margin, at 3.17%.
+
+Despite generating £42,807.39 in aggregate net profit, the store recorded losses in 13 of the 24 months.
+
+Its rent-to-revenue ratio of 21.78% indicates substantial occupancy cost pressure relative to revenue.
+
+This finding demonstrates that positive cumulative profitability can conceal recurring periods of financial weakness.
+
+### 3.3 Regional Concentration of Low-Performing Stores
+
+Five of the ten lowest-margin stores were located in London.
+
+The remaining five were distributed across North-West, East-Midlands, and South-West.
+
+This reinforces the earlier finding that London's profitability challenges warrant management attention, while demonstrating that underperformance is not exclusive to the capital.
+
+### 3.4 High-Performing Store Benchmarks
+
+Coventry Roastery recorded the highest net profit margin at 38.21%, followed by Derry Station at 31.43% and Newport House at 31.15%.
+
+These stores provide potential benchmarks for identifying operational and commercial differences between high- and low-performing locations.
+
+However, meaningful benchmarking requires consideration of differences in location, store characteristics, customer demand, and operating costs.
+
+## 4. Business Interpretation
+
+The analysis reveals significant differences in profitability across Sunrise Coffee's store network.
+
+South London Corner represents the most substantial cumulative profitability concern, whereas Canary Wharf Express demonstrates a different risk profile characterized by repeated monthly losses despite an overall positive return.
+
+The findings suggest that profitability challenges should be assessed through multiple indicators rather than net profit margin alone.
+
+In particular, management should consider the frequency of losses, cost-to-revenue ratios, and consistency of financial performance.
+
+The observed associations do not establish the underlying causes of poor profitability.
+
+## 5. Strategic Recommendations
+
+1. **Prioritize Underperforming Stores:** Conduct targeted operational reviews of South London Corner, Canary Wharf Express, Manchester Collective, and other low-margin locations.
+
+2. **Monitor Recurring Monthly Losses:** Implement alerts for stores experiencing repeated negative monthly profitability, including those remaining profitable over longer periods.
+
+3. **Investigate Cost Structures:** Compare staffing and rental cost burdens with revenue, sales patterns, and operational requirements before considering cost-reduction measures.
+
+4. **Establish Comparable Benchmarks:** Compare low-performing stores with higher-performing locations that share similar operating characteristics.
+
+5. **Develop Interactive Performance Monitoring:** Incorporate store rankings, profitability trends, cost ratios, and loss-making month counts into Power BI to support management decision-making.
+
+## 6. Analytical Limitations
+
+The analysis uses aggregated historical financial records and does not establish causality.
+
+Differences in market conditions, store locations, customer demand, staffing requirements, and operational characteristics may influence observed performance.
+
+A positive cumulative profit does not guarantee stable monthly profitability, while a negative cumulative result does not by itself justify closure.
+
+Management recommendations should be validated against additional operational and commercial evidence.
+
+## 7. Conclusion
+
+Chain-wide benchmarking confirms that South London Corner is the lowest-performing store by net profit margin and the only location with an overall negative net profit during 2023–2024.
+
+However, the analysis also identifies additional locations with weak margins and recurring losses, particularly Canary Wharf Express.
+
+The findings support a broader performance management approach that evaluates the entire store network while prioritizing locations requiring more detailed investigation.
+
+**The key recommendation is to establish a chain-wide, evidence-based store monitoring framework rather than relying on isolated profitability case studies.**
+
+
+
+
+
+# Sunrise Coffee Chain — Final Challenge Gap Analysis Report
+
+**Project:** Sunrise Coffee Chain Analytics  
+**Reporting Period:** 2023–2024  
+**Prepared for:** Chief Commercial Officer  
+**Scope:** Chain-Wide Store Benchmarking and Challenge Gap Analysis  
+**Currency:** GBP
+
+---
+
+## Analysis 14 — Chain-Wide Store Performance Benchmarking
+
+### Business Objective
+
+This analysis evaluates the financial performance of all 60 Sunrise Coffee stores to identify underperforming locations, compare operational cost structures, and determine whether profitability problems are concentrated in particular stores or regions.
+
+### Methodology
+
+The analysis uses monthly profitability records covering 24 months for each store.
+
+The following indicators were calculated:
+
+- Total Revenue
+- Total Net Profit
+- Weighted Net Profit Margin
+- Rent-to-Revenue Ratio
+- Staffing-to-Revenue Ratio
+- Number of Loss-Making Months
+
+Net profit margin was calculated by dividing aggregated net profit by aggregated revenue.
+
+### Key Findings
+
+**1. South London Corner — Lowest Profitability**
+
+South London Corner recorded the weakest overall financial performance across the chain.
+
+- Total Revenue: £1,382,721.02
+- Total Net Loss: £50,494.58
+- Net Profit Margin: -3.65%
+- Loss-Making Months: 13 out of 24
+- Rent-to-Revenue Ratio: 13.31%
+- Staffing-to-Revenue Ratio: 51.69%
+
+The store was the only location with a negative cumulative net profit during the two-year period.
+
+**2. Canary Wharf Express — Recurring Financial Weakness**
+
+Canary Wharf Express recorded the second-lowest net profit margin at 3.17%.
+
+Although the store generated £42,807.39 in cumulative net profit, it experienced losses in 13 of the 24 months.
+
+Its rent-to-revenue ratio reached 21.78%, suggesting substantial occupancy cost pressure relative to revenue.
+
+**3. Regional Concentration**
+
+Five of the ten lowest-margin stores were located in London.
+
+This confirms that London's profitability challenges extend beyond a single location.
+
+**4. High-Performing Stores**
+
+Coventry Roastery recorded the highest cumulative net profit margin at 38.21%.
+
+Other high-performing stores included:
+
+- Derry Station: 31.43%
+- Newport House: 31.15%
+- Leeds Roastery: 29.73%
+- Belfast Yard: 28.89%
+
+These locations may provide useful benchmarks for future operational comparisons.
+
+### Business Interpretation
+
+Store profitability varies substantially across the Sunrise Coffee network.
+
+Positive cumulative profitability does not necessarily indicate consistent monthly performance.
+
+Similarly, negative profitability alone does not establish the underlying cause of financial weakness.
+
+### Strategic Recommendations
+
+1. Prioritise South London Corner and Canary Wharf Express for detailed operational reviews.
+2. Monitor recurring monthly losses alongside cumulative profitability.
+3. Investigate rental, staffing, and revenue patterns before recommending store closures or workforce reductions.
+4. Compare underperforming stores with operationally similar high-performing locations.
+5. Develop an interactive chain-wide profitability monitoring dashboard.
+
+---
+
+## Challenge Gap Analysis 01 — Store Format Profitability and Space Efficiency
+
+### Business Objective
+
+Evaluate differences in financial performance, space utilisation, and customer traffic between Sunrise Coffee store formats.
+
+### Key Findings
+
+| Store Format | Stores | Total Revenue | Net Profit | Net Margin |
+|---|---:|---:|---:|---:|
+| Transport-Hub | 2 | £3,186,525.91 | £801,111.46 | 25.14% |
+| High-Street | 58 | £86,499,463.27 | £16,078,392.61 | 18.59% |
+
+Additional operational indicators:
+
+| Metric | Transport-Hub | High-Street |
+|---|---:|---:|
+| Average Monthly Revenue per Sq Ft | £50.07 | £52.46 |
+| Reported Average Daily Footfall | 455.47 | 481.97 |
+
+Transport-Hub stores achieved a net profit margin 6.55 percentage points higher than High-Street stores.
+
+However, High-Street stores recorded slightly higher average revenue per square foot and reported customer footfall.
+
+### Business Interpretation
+
+Transport-Hub stores appear more effective at converting revenue into net profit despite lower reported traffic and space efficiency.
+
+However, the format contains only two stores, limiting the reliability of broad generalisations.
+
+Furthermore, the source data contains no Retail-Park stores despite the format being mentioned in the challenge brief.
+
+### Management Recommendations
+
+- Investigate the operational characteristics contributing to Transport-Hub profitability.
+- Compare rental expenses, staffing requirements, and location-specific commercial conditions.
+- Avoid expansion recommendations based solely on the performance of two stores.
+- Use revenue-adjusted cost and profitability indicators for future format comparisons.
+
+**Output:** `outputs/09_01_store_format_performance.csv`
+
+---
+
+## Challenge Gap Analysis 02 — Regional Profitability Risk Assessment
+
+### Business Objective
+
+Identify regions with the highest concentration of financially vulnerable store-month observations and validate the reliability of existing profitability classifications.
+
+### Methodology
+
+Monthly financial records were classified using the net profit margin thresholds defined in the data dictionary.
+
+The recalculated profitability classification was compared with the original `profitability_status` field.
+
+### Key Findings
+
+Across 1,440 monthly profitability records:
+
+- 600 records had profitability classifications inconsistent with the documented thresholds.
+- These records represented approximately 41.67% of observations.
+- Recalculated classifications identified 197 risk months.
+- Original profitability labels identified 164 risk months.
+
+The highest regional risk concentrations were:
+
+| Region | Store-Months | Risk Months | Risk Share |
+|---|---:|---:|---:|
+| London | 168 | 49 | 29.17% |
+| South-West | 120 | 23 | 19.17% |
+| North-West | 120 | 21 | 17.50% |
+| East-Midlands | 120 | 20 | 16.67% |
+
+### Business Interpretation
+
+London demonstrates the highest concentration of financially vulnerable observations.
+
+The differences between existing and recalculated classifications also represent a significant data governance concern.
+
+Using the original profitability status without validation could misrepresent the financial risk associated with individual stores or regions.
+
+### Strategic Recommendations
+
+1. Recalculate profitability classifications using documented net margin thresholds.
+2. Preserve the original status values for audit purposes.
+3. Prioritise London, South-West, and North-West for financial risk monitoring.
+4. Evaluate risk as a proportion of store-month observations rather than relying solely on absolute counts.
+5. Introduce automated profitability classification validation.
+
+**Output:** `outputs/09_02_regional_risk_summary.csv`
+
+---
+
+## Challenge Gap Analysis 03 — Year-over-Year Store Profitability Changes
+
+### Business Objective
+
+Identify stores experiencing the largest improvements and deteriorations in annual net profit between 2023 and 2024.
+
+### Key Findings
+
+**Stores with the largest profit deterioration**
+
+| Store | Region | Annual Profit Change |
+|---|---|---:|
+| Bristol Station | South-West | -£141,296.80 |
+| South London Corner | London | -£107,793.24 |
+| Chester House | North-West | -£91,618.16 |
+
+**Stores with the strongest improvement**
+
+| Store | Region | Annual Profit Change |
+|---|---|---:|
+| Belfast Yard | Northern-Ireland | +£116,789.62 |
+| Liverpool Collective | North-West | +£116,496.79 |
+| Cheltenham Quarter | South-West | +£90,224.33 |
+
+### Business Interpretation
+
+South London Corner is not the only store experiencing financial deterioration.
+
+Bristol Station recorded an even larger year-over-year net profit decline, although it remained cumulatively profitable over the two-year period.
+
+Meanwhile, several stores recorded substantial improvements.
+
+These differences demonstrate that financial performance changes are not uniform across the chain.
+
+### Strategic Recommendations
+
+- Conduct root-cause investigations for the stores with the largest profit declines.
+- Examine revenue trends, cost structures, and operational characteristics.
+- Identify possible best practices among improving stores.
+- Compare stores only after considering location, format, and other operational differences.
+- Monitor both cumulative profitability and annual performance deterioration.
+
+**Output:** `outputs/09_03_store_yoy_profit_change.csv`
+
+---
+
+## Challenge Gap Analysis 04 — Revenue Mix by Store Format
+
+### Business Objective
+
+Examine changes in recorded product category revenue composition across High-Street and Transport-Hub stores between 2023 and 2024.
+
+### Key Findings
+
+| Format / Year | Espresso Share | Filter Share | Food Share | Retail Beans Share |
+|---|---:|---:|---:|---:|
+| High-Street 2023 | 45.85% | 18.95% | 26.25% | 8.95% |
+| High-Street 2024 | 45.51% | 19.32% | 25.98% | 9.18% |
+| Transport-Hub 2023 | 45.44% | 21.10% | 26.09% | 7.37% |
+| Transport-Hub 2024 | 46.75% | 19.76% | 23.91% | 9.58% |
+
+Within Transport-Hub observations:
+
+- Retail Beans revenue share increased by 2.21 percentage points.
+- Espresso share increased by 1.31 percentage points.
+- Food share decreased by 2.18 percentage points.
+- Filter Coffee share decreased by 1.34 percentage points.
+
+High-Street category shares remained comparatively stable.
+
+### Business Interpretation
+
+Transport-Hub stores experienced more pronounced changes in recorded category revenue composition.
+
+The growing share of Retail Beans may indicate an opportunity for further commercial investigation.
+
+However, an increasing revenue share does not necessarily demonstrate increasing customer demand or higher profitability.
+
+The number of observed daily sales records also changed between years, limiting conclusions about underlying revenue growth.
+
+### Strategic Recommendations
+
+1. Investigate Retail Beans purchasing patterns in Transport-Hub locations.
+2. Evaluate category revenue changes alongside customer traffic and transaction records.
+3. Validate daily sales completeness before interpreting changes as full-business trends.
+4. Investigate opportunities for targeted category promotions.
+5. Avoid major inventory or assortment changes without reliable sales volume data.
+
+**Output:** `outputs/09_04_format_revenue_mix.csv`
+
+---
+
+## Challenge Gap Analysis 05 — Product Category Gross Margin Assessment
+
+### Business Objective
+
+Compare catalogue-level gross margins across product categories to identify potential pricing and product profitability opportunities.
+
+### Key Findings
+
+| Product Category | Products | Average Gross Margin |
+|---|---:|---:|
+| Filter-Coffee | 4 | 88.30% |
+| Espresso-Drinks | 12 | 83.88% |
+| Cold-Drinks | 4 | 81.33% |
+| Food | 10 | 73.98% |
+| Merchandise | 2 | 70.20% |
+| Retail-Beans | 8 | 67.70% |
+
+Filter Coffee recorded the highest average catalogue-level gross margin at 88.30%.
+
+Retail Beans had the lowest average catalogue-level gross margin at 67.70%.
+
+### Business Interpretation
+
+High catalogue gross margins suggest favourable unit economics but do not necessarily indicate high total gross profit.
+
+A product with a relatively low unit margin may generate substantial total profit through greater sales volume.
+
+Furthermore, the available figures are unweighted averages of product-level gross margins.
+
+They do not represent realised sales-weighted category profitability.
+
+The observed catalogue margin values also exceed the upper range documented in the supplied data dictionary.
+
+### Strategic Recommendations
+
+- Evaluate product profitability using both margin and sales volume.
+- Investigate commercial opportunities for high-margin coffee categories.
+- Avoid prioritising products solely on the basis of catalogue margins.
+- Improve product-level sales attribution.
+- Validate catalogue margin definitions and data documentation.
+
+**Output:** `outputs/09_05_product_category_margins.csv`
+
+---
+
+## Challenge Gap Analysis 06 — Weekday, Weekend and Bank Holiday Performance
+
+### Business Objective
+
+Investigate recorded sales performance differences between normal weekdays, weekends, and UK bank holidays across store formats.
+
+### Key Findings
+
+| Store Format | Day Type | Average Revenue per Record | Average Transactions per Record |
+|---|---|---:|---:|
+| High-Street | Normal Weekday | £2,207.13 | 303.37 |
+| High-Street | Weekend | £1,651.98 | 227.34 |
+| High-Street | Bank Holiday | £1,365.39 | 183.59 |
+| Transport-Hub | Normal Weekday | £2,731.79 | 368.74 |
+| Transport-Hub | Weekend | £1,982.59 | 266.82 |
+| Transport-Hub | Bank Holiday | £1,793.90 | 235.38 |
+
+Compared with normal weekdays, observed average revenue per record decreased:
+
+**High-Street**
+
+- Weekend: approximately 25.15%.
+- Bank Holiday: approximately 38.14%.
+
+**Transport-Hub**
+
+- Weekend: approximately 27.43%.
+- Bank Holiday: approximately 34.33%.
+
+### Business Interpretation
+
+Both store formats recorded higher average revenue and transaction counts per observation on normal weekdays.
+
+This may reflect differences in commuting, working patterns, and customer activity.
+
+However, the results are descriptive and do not establish that weekends or holidays directly cause lower revenue.
+
+The Transport-Hub bank holiday group contains only eight observations.
+
+Furthermore, the daily sales dataset includes repeated store-date combinations, meaning these averages represent recorded observations rather than verified unique store-days.
+
+The holiday flag also follows the England and Wales calendar rather than all regional UK holiday calendars.
+
+### Strategic Recommendations
+
+1. Evaluate whether staffing schedules reflect observed differences in demand across day types.
+2. Review inventory and product availability during lower-activity periods.
+3. Investigate targeted weekend and holiday promotional opportunities.
+4. Validate these patterns using complete store-day sales histories.
+5. Incorporate appropriate regional holiday calendars before operational implementation.
+
+**Output:** `outputs/09_06_weekday_weekend_bank_holidays.csv`
+
+---
+
+## Challenge Gap Analysis 07 — Quarterly Financial Performance
+
+### Business Objective
+
+Assess quarterly revenue and profitability across the Sunrise Coffee network, identify periods of financial strength or weakness, and compare seasonal performance between store formats.
+
+### Key Findings
+
+| Period | Total Revenue | Net Profit | Net Profit Margin |
+|---|---:|---:|---:|
+| 2023 Q1 | £11.33M | £2.13M | 18.80% |
+| 2023 Q2 | £11.23M | £2.15M | 19.15% |
+| 2023 Q3 | £11.34M | £2.21M | 19.48% |
+| 2023 Q4 | £11.08M | £1.98M | 17.90% |
+| 2024 Q1 | £11.41M | £2.27M | 19.92% |
+| 2024 Q2 | £11.02M | £2.03M | 18.41% |
+| 2024 Q3 | £10.90M | £1.89M | 17.31% |
+| 2024 Q4 | £11.37M | £2.22M | 19.51% |
+
+### Business Interpretation
+
+The strongest financial quarter varied between the two reporting years.
+
+In 2023, Q3 generated the highest revenue and net profit.
+
+In 2024, Q1 generated the highest revenue and net profit.
+
+The most notable deterioration occurred in Q3, when net profit margin declined from 19.48% in 2023 to 17.31% in 2024.
+
+This represents a reduction of approximately 2.17 percentage points.
+
+Transport-Hub stores maintained higher net profit margins than High-Street stores across the observed quarters.
+
+However, the Transport-Hub format contains only two stores.
+
+### Strategic Recommendations
+
+- Investigate the causes of the 2024 Q3 profitability decline.
+- Compare regional and store-level performance during weaker quarters.
+- Use historical quarterly patterns to support management monitoring.
+- Avoid assuming that two years of observations establish permanent seasonal behaviour.
+- Combine financial seasonality with complete customer traffic and transaction data before adjusting future staffing and inventory plans.
+
+**Output:** `outputs/09_07_quarterly_format_performance.csv`
+
+---
+
+# Final Executive Business Insights
+
+## Key Finding 1 — Profitability Challenges Are Concentrated
+
+London exhibits the highest proportion of financially vulnerable store-month observations.
+
+South London Corner represents the weakest cumulative profitability case, while Canary Wharf Express demonstrates recurring monthly losses despite remaining cumulatively profitable.
+
+**Business Recommendation:** Prioritise targeted operational reviews and establish chain-wide profitability risk monitoring.
+
+## Key Finding 2 — Store Performance Changes Are Uneven
+
+Some stores experienced substantial year-over-year profit deterioration, whereas others recorded significant improvements.
+
+Bristol Station demonstrated the largest annual profit decline, while Belfast Yard and Liverpool Collective showed strong improvement.
+
+**Business Recommendation:** Combine performance deterioration monitoring with comparable-store benchmarking.
+
+## Key Finding 3 — Store Formats Have Different Financial Profiles
+
+Transport-Hub stores recorded higher weighted net profit margins than High-Street stores.
+
+However, the difference cannot establish superior format performance across the wider UK market because only two Transport-Hub stores were observed.
+
+**Business Recommendation:** Investigate format economics and location characteristics before making expansion decisions.
+
+## Key Finding 4 — Category Revenue Composition Is Changing
+
+Transport-Hub records show a growing Retail Beans revenue share and declining Food revenue share.
+
+Meanwhile, Filter Coffee and Espresso Drinks have relatively high average catalogue margins.
+
+**Business Recommendation:** Evaluate revenue mix changes together with realised sales volume and gross profit contribution.
+
+## Key Finding 5 — Operational Performance Varies Over Time
+
+Recorded weekday sales observations show higher average revenue and transaction counts than weekend and bank holiday observations.
+
+Quarterly profitability also varies between reporting periods, with a notable decline in Q3 2024.
+
+**Business Recommendation:** Investigate temporal differences using complete sales data before implementing staffing, inventory, or promotional changes.
+
+---
+
+# Data Quality and Analytical Limitations
+
+The analysis identified several issues requiring documentation and validation:
+
+1. **Profitability Status:** Existing profitability classifications are inconsistent with documented net margin thresholds in 600 of 1,440 records.
+
+2. **Store Format Representation:** Retail-Park stores are mentioned in the challenge brief but are absent from the provided source data.
+
+3. **Daily Sales Coverage:** Multiple records exist for some store-date combinations, and complete daily reporting coverage has not been established.
+
+4. **Daily and Monthly Revenue Reconciliation:** Aggregated daily sales observations do not represent the same verified revenue population as monthly financial records.
+
+5. **Product-Level Attribution:** The `product_id` field identifies the top-selling product for a recorded day and must not be used to assign an entire day's revenue to that product.
+
+6. **Seasonal Data:** Two years of observations are insufficient to establish consistent long-term seasonal patterns.
+
+7. **Loyalty ROI:** Member-attributed spending does not establish incremental revenue generated by the loyalty programme. A credible comparison or counterfactual would be required for causal ROI estimation.
+
+8. **Catalogue Margins:** Average product margins are not equivalent to realised, sales-weighted category profitability.
+
+These limitations should be communicated alongside the dashboard findings to prevent inappropriate operational conclusions.
+
+---
+
+# Final Management Recommendations
+
+The following actions are recommended for Sunrise Coffee's commercial management team:
+
+1. Establish a chain-wide profitability monitoring system combining net profit margin, cost ratios, monthly losses, and year-over-year changes.
+2. Prioritise detailed reviews of South London Corner, Canary Wharf Express, and Bristol Station.
+3. Investigate higher-performing stores to identify transferable practices while accounting for differences in location and operating conditions.
+4. Validate profitability classifications before using them for investment or closure decisions.
+5. Evaluate loyalty programme effectiveness using member spending, redemption costs, profitability, and appropriate incremental impact measurement.
+6. Improve product-level sales information to support reliable assortment and gross profit analysis.
+7. Investigate seasonal and day-type patterns before revising staffing schedules and promotional strategies.
+8. Build an interactive Power BI dashboard to support regional, store-level, financial, and commercial performance monitoring.
+
+---
+
+# Recommended Power BI Dashboard Structure
+
+## Page 1 — Executive Performance Overview
+
+**Key Indicators**
+
+- Total Revenue
+- Total Net Profit
+- Net Profit Margin
+- Year-over-Year Revenue Change
+- Year-over-Year Profit Change
+- Store Count
+
+**Visualisations**
+
+- Revenue and profit trends
+- Regional profitability comparison
+- Quarterly performance
+- Executive performance highlights
+
+## Page 2 — Regional & Store Performance
+
+**Key Indicators**
+
+- Store Profitability Ranking
+- Loss-Making Months
+- Recalculated Profitability Status
+- Rent-to-Revenue Ratio
+- Staffing-to-Revenue Ratio
+
+**Visualisations**
+
+- Bottom 10 Stores by Profit Margin
+- Revenue vs Profitability
+- Regional Risk Concentration
+- Year-over-Year Store Profit Change
+- Store-Level Drill-Down
+
+## Page 3 — Commercial & Loyalty Insights
+
+**Key Indicators**
+
+- Category Revenue Share
+- Loyalty Adoption Rate
+- Loyalty Member Revenue Share
+- Loyalty Redemption Costs
+- Catalogue Product Margins
+
+**Visualisations**
+
+- Product Category Revenue Composition
+- Revenue Mix by Store Format
+- Loyalty Performance Comparison
+- Catalogue Gross Margin Ranking
+- Weekday and Weekend Performance
+
+---
+
+# Final Conclusion
+
+The Sunrise Coffee Chain analysis demonstrates substantial variation in financial performance across regions, store formats, individual locations, and reporting periods.
+
+London exhibits the highest concentration of profitability risk, with South London Corner emerging as the weakest cumulative profitability case.
+
+However, broader comparisons reveal that profitability challenges are not limited to London and that multiple stores experienced significant year-over-year deterioration.
+
+Transport-Hub stores show higher recorded net margins, while product category and temporal analyses reveal potential commercial opportunities requiring further validation.
+
+The findings support the development of a comprehensive, evidence-based business intelligence framework that enables management to monitor financial performance, investigate operational risks, and evaluate commercial opportunities.
+
+**The central recommendation is to prioritise data reliability, store-level profitability monitoring, and targeted business investigations before making major expansion, staffing, or investment decisions.**
+
+**Project Status:** All required analytical themes addressed.  
+**Next Phase:** Power BI Dashboard Development, Validation, Executive Storytelling, and Competition Submission.

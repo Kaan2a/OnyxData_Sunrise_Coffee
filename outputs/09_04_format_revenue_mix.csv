@@ -1,0 +1,5 @@
+year,store_format,observed_records,observed_store_days,recorded_revenue_gbp,espresso_share_pct,filter_share_pct,food_share_pct,retail_beans_share_pct
+2023,High-Street,4889,4338,9936301.44,45.85,18.95,26.25,8.95
+2023,Transport-Hub,148,136,371412.31,45.44,21.10,26.09,7.37
+2024,High-Street,4797,4292,9722501.09,45.51,19.32,25.98,9.18
+2024,Transport-Hub,166,144,423425.37,46.75,19.76,23.91,9.58

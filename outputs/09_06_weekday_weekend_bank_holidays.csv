@@ -1,0 +1,7 @@
+store_format,is_weekend,is_uk_bank_holiday,observed_records,observed_store_days,avg_revenue_per_record_gbp,avg_transactions_per_record
+High-Street,False,False,6711,5969,2207.13,303.37
+High-Street,False,True,237,210,1365.39,183.59
+High-Street,True,False,2738,2451,1651.98,227.34
+Transport-Hub,False,False,232,202,2731.79,368.74
+Transport-Hub,False,True,8,8,1793.90,235.38
+Transport-Hub,True,False,74,70,1982.59,266.82
