@@ -1,30 +1,59 @@
 # Sunrise Coffee Chain Analytics
 
-An Onyx Data project using PostgreSQL analysis, an English findings report, and a planned Power BI dashboard.
+An OnyxData challenge project analysing a 60-store UK coffee chain with **PostgreSQL**, documenting findings in an English report, and visualising results in a Power BI dashboard.
 
-## Project structure
+## About
 
-| Location | Contents |
-|---|---|
-| `sql/01_data_exploration.sql` | Store distribution, operational statistics, and regional costs |
-| `sql/02_data_quality.sql` | Missing values, duplicates, product launch dates, table relationships, and calendar checks |
-| `sql/03_profitability_analysis.sql` | Regional and London store profitability; South London Corner monthly profitability and annual costs |
-| `sql/04_customer_transaction_analysis.sql` | Analysis 10: data coverage, a store/date example, and the original draft query |
-| `sql/05_product_performance.sql` | Analysis 11: table previews, revenue reconciliation, and annual category revenue |
-| [reports/analysis_notes.md](reports/analysis_notes.md) | Existing English analysis report; original content preserved |
-| `dashboard/` | Reserved for Power BI files; the dashboard has not been built |
+Sunrise Coffee operates 60 stores across 12 UK regions with varying formats (High-Street, Shopping-Centre, Transport-Hub). This project investigates the chain's financial and operational performance over a two-year period using transactional and dimensional data.
 
-## Current status
+Key areas of analysis:
 
-On October 21, 2026, the earlier Codex changes were reverted and the original query blocks were organized by topic. The user subsequently approved four punctuation corrections and the regional query's `month_id` correction. Those changes have been applied. All active project documentation and code comments use English.
+- **Data quality** — completeness checks, duplicate detection, and calendar validation.
+- **Profitability** — regional and store-level profit margins; identification of loss-making locations such as South London Corner.
+- **Product & loyalty** — category revenue composition, loyalty programme adoption, and redemption cost impact.
+- **Seasonality & benchmarking** — monthly revenue patterns, weekday/weekend splits, and chain-wide store ranking.
+- **Regression & gap analysis** — drivers of store revenue (footfall, rent, staffing, loyalty) and year-over-year profit change.
 
+The central finding is that profitability risk is concentrated in London but not limited to it, and that data reliability and store-level monitoring should precede major business decisions.
 
-## Original backup
+## Project Structure
 
-The 10 files saved before the first Codex edits are preserved at:
+```
+├── sql/
+│   ├── 01_data_exploration.sql          -- Store distribution, operational stats, regional costs
+│   ├── 02_data_quality.sql              -- Missing values, duplicates, launch dates, table relationships
+│   ├── 03_profitability_analysis.sql    -- Regional & London store profitability
+│   ├── 04_customer_transaction_analysis.sql -- Data coverage, store/date example
+│   ├── 05_product_performance.sql       -- Revenue reconciliation, annual category revenue
+│   ├── 06_loyalty_seasonality.sql       -- Loyalty programme performance & seasonality
+│   ├── 07_regression_analysis.sql       -- Multiple linear regression data prep
+│   ├── 08_store_benchmarking.sql        -- Chain-wide store benchmarking
+│   └── 09_challenge_gap_analysis.sql    -- Store format, regional risk & YoY profit analysis
+│
+├── outputs/                             -- Query results (CSV)
+├── reports/
+│   └── analysis_notes.md                -- Detailed findings report
+├── dashboard/
+│   └── Sunrise_Coffee_Performance.pbix  -- Power BI dashboard
+└── README.md
+```
 
-`.local/backups/2026-10-21-original-before-codex/`
+## Analyses
 
-This backup was copied from the original `2026-10-21-before-cleanup` snapshot and includes the user's uncommitted work at that time. Every file was verified using SHA-256. The historical backup remains unchanged, including any original non-English text. `.local/` is excluded from Git.
+| #  | Topic | File |
+|----|-------|------|
+| 01 | Regional store distribution | `01_data_exploration.sql` |
+| 02 | Data quality checks | `02_data_quality.sql` |
+| 03 | Profitability (region & store) | `03_profitability_analysis.sql` |
+| 04 | Customer transaction analysis | `04_customer_transaction_analysis.sql` |
+| 05 | Product performance | `05_product_performance.sql` |
+| 06 | Loyalty programme & seasonality | `06_loyalty_seasonality.sql` |
+| 07 | Regression data preparation | `07_regression_analysis.sql` |
+| 08 | Store benchmarking | `08_store_benchmarking.sql` |
+| 09 | Gap analysis (format, risk, YoY) | `09_challenge_gap_analysis.sql` |
 
-To restore the original state, copy the backed-up `README.md`, SQL files, CSV files, and `reports/analysis_notes.md` to their matching project paths. Do not copy `manifest.json` or `BACKUP_INFO.txt` into the project root.
+## Tech Stack
+
+- **Database:** PostgreSQL
+- **Visualisation:** Power BI
+- **Language:** SQL
